@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="输入密码"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#EDEDED" />
+
+    <org.oy.chardemo.utilslibrary.passworldedittext.PassworldEditText
+        android:id="@+id/passworld_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:background="@null"
+        android:padding="15dp"
+        app:bgColor="#d1d2d6"
+        app:bgCorner="5dp"
+        app:bgSize="1dp"
+        app:circularColor="#d1d2d6"
+        app:circularNums="6"
+        app:circularRadius="5dp"
+        app:diviedingLinesColor="#d1d2d6"
+        app:diviedingLinesSize="1dp"
+        app:passworldNums="6" />
+
+    <org.oy.chardemo.utilslibrary.passworldedittext.PassworldHeyBoard
+        android:id="@+id/keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

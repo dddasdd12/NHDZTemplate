@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ColorTrackTextView">
+        <attr name="originColor" format="color" />
+        <attr name="changeColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="TrackIndicatorView">
+        <attr name="tabVisibleNums" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="PassworldEditText">
+        <!--密码个数-->
+        <attr name="passworldNums" format="integer" />
+        <!--密码圆点个数-->
+        <attr name="circularNums" format="integer" />
+        <!--密码圆点颜色-->
+        <attr name="circularColor" format="color" />
+        <!--密码圆点半径-->
+        <attr name="circularRadius" format="dimension" />
+        <!--分割线颜色-->
+        <attr name="diviedingLinesColor" format="color" />
+        <!--分割线大小-->
+        <attr name="diviedingLinesSize" format="dimension" />
+        <!--边框颜色-->
+        <attr name="bgColor" format="color" />
+        <!--边框大小-->
+        <attr name="bgSize" format="dimension" />
+        <!--边框圆角大小-->
+        <attr name="bgCorner" format="dimension" />
+    </declare-styleable>
+</resources>
