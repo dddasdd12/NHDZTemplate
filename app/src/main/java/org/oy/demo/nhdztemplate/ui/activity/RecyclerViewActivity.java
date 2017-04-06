@@ -7,15 +7,11 @@ import android.view.View;
 import org.oy.demo.nhdztemplate.R;
 import org.oy.demo.nhdztemplate.views.DefaultNavigationBar;
 
-public class RecyclerViewActivity extends BaseActivity {
+public class RecyclerViewActivity extends BaseSkinActivity {
     private boolean isload = false;
     private RecyclerView recyclerView;
 
 
-    @Override
-    protected void beforSetContentView() {
-
-    }
 
     @Override
     protected int setContentViewId() {

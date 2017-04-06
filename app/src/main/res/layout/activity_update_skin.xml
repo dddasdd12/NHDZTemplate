@@ -1,18 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/skin_bg"
+    android:orientation="vertical">
 
-    <Button
-        android:id="@+id/skin_bt1"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="皮肤一" />
+        android:orientation="horizontal">
 
+        <Button
+            android:id="@+id/skin_bt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/skin_bt_bg"
+            android:text="换肤"
+            android:textColor="@color/skin_tv_color" />
+
+        <Button
+            android:id="@+id/skin_bt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/skin_bt_bg"
+            android:text="恢复默认"
+            android:textColor="@color/skin_tv_color" />
+    </LinearLayout>
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#990000"
-        android:layout_below="@+id/skin_bt1" />
-</RelativeLayout>
+        android:layout_below="@+id/skin_bt1"
+        android:src="@drawable/skinimg" />
+</LinearLayout>

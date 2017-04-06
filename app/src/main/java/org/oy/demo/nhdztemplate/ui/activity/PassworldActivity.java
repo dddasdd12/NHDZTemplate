@@ -2,7 +2,6 @@ package org.oy.demo.nhdztemplate.ui.activity;
 
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.Toast;
 
 import org.oy.chardemo.utilslibrary.passworldedittext.PassworldEditText;

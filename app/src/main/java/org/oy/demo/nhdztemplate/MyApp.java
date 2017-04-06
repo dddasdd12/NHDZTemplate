@@ -9,6 +9,7 @@ import android.support.multidex.MultiDexApplication;
 import com.alipay.euler.andfix.patch.PatchManager;
 
 import org.oy.chardemo.utilslibrary.exception.ExceptionCashHelper;
+import org.oy.demo.nhdztemplate.skin.SkinManager;
 
 /**
  * 全局监听
@@ -24,6 +25,7 @@ public class MyApp extends MultiDexApplication {
         //设置全局异常 捕获
         ExceptionCashHelper.getInstance().init(this);
         patchManager = new PatchManager(this);
+        SkinManager.getInstance().init(this);
         try {
             packageInfo = this.getPackageManager().getPackageInfo(this.getPackageName(),
                     PackageManager.GET_ACTIVITIES);

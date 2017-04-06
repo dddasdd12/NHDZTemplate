@@ -30,7 +30,7 @@ import java.io.InputStreamReader;
 import java.lang.ref.WeakReference;
 
 
-public class MainActivity extends BaseActivity implements View.OnClickListener {
+public class MainActivity extends BaseSkinActivity implements View.OnClickListener {
     private final int requestCode = 200;// 通话权限回调码
     private final int requestCameraCode = 100;// 相册权限回调码
 
@@ -41,9 +41,6 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
     private Button bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9, bt10;
 
-    @Override
-    protected void beforSetContentView() {
-    }
 
     @Override
     protected int setContentViewId() {
@@ -90,11 +87,6 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         bt8.setOnClickListener(this);
         bt9.setOnClickListener(this);
         bt10.setOnClickListener(this);
-
-    }
-
-    @Override
-    protected void FinishLoadXml() {
 
     }
 

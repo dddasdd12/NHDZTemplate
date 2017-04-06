@@ -55,7 +55,7 @@
             </intent-filter>
         </service>
 
-        <activity android:name=".ui.activity.UpdateSkinActivity"></activity>
+        <activity android:name=".ui.activity.UpdateSkinActivity" />
     </application>
 
 </manifest>

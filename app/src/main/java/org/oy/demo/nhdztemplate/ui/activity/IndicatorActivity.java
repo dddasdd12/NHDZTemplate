@@ -28,15 +28,12 @@ import org.oy.demo.nhdztemplate.views.DefaultNavigationBar;
 import java.util.ArrayList;
 import java.util.List;
 
-public class IndicatorActivity extends BaseActivity {
+public class IndicatorActivity extends BaseSkinActivity {
     private String[] datas = {"头条", "新闻", "视频", "娱乐", "体育", "财经", "科技", "搞笑", "图片", "地方", "社会"};
     private TrackIndicatorView indicotorView;
     private ViewPager viewPager;
     private List<Fragment> fragments;
 
-    @Override
-    protected void beforSetContentView() {
-    }
 
     @Override
     protected int setContentViewId() {
@@ -79,10 +76,6 @@ public class IndicatorActivity extends BaseActivity {
         fragments.add(new WorldFragment());
     }
 
-    @Override
-    protected void FinishLoadXml() {
-
-    }
 
     private void initDatas() {
         IndicotorAdapter mAdapter = new IndicotorAdapter() {
@@ -95,6 +88,7 @@ public class IndicatorActivity extends BaseActivity {
             public View getView(int position, ViewGroup parent) {
                 TextView textView = new TextView(IndicatorActivity.this);
                 textView.setTextSize(16);
+//                textView.setBackgroundColor(ContextCompat.getColor(IndicatorActivity.this, R.color.colorPrimary));
                 textView.setPadding(0, 20, 0, 20);
                 textView.setGravity(Gravity.CENTER);
                 textView.setText(datas[position]);

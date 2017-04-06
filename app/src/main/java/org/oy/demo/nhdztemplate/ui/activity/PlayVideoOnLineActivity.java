@@ -13,7 +13,7 @@ import org.oy.demo.nhdztemplate.ui.fragment.PlayVedioFragment;
 import org.oy.demo.nhdztemplate.views.DefaultNavigationBar;
 import org.oy.chardemo.utilslibrary.windowutils.WindowUtils;
 
-public class PlayVideoOnLineActivity extends BaseActivity {
+public class PlayVideoOnLineActivity extends BaseSkinActivity {
     private boolean isFirestLoad = false;
     private Configuration configuration;
     private LinearLayout.LayoutParams params;

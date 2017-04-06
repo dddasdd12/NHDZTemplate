@@ -14,7 +14,7 @@ import org.oy.demo.nhdztemplate.UserAidl;
 import org.oy.demo.nhdztemplate.service.MessageService;
 import org.oy.demo.nhdztemplate.views.DefaultNavigationBar;
 
-public class ProcessActivity extends BaseActivity {
+public class ProcessActivity extends BaseSkinActivity {
     private UserAidl userAidl;
     private ServiceConnection conn = new ServiceConnection() {
         @Override
@@ -27,11 +27,6 @@ public class ProcessActivity extends BaseActivity {
 
         }
     };
-
-    @Override
-    protected void beforSetContentView() {
-
-    }
 
     @Override
     protected int setContentViewId() {
@@ -75,11 +70,6 @@ public class ProcessActivity extends BaseActivity {
                 }
             }
         });
-    }
-
-    @Override
-    protected void FinishLoadXml() {
-
     }
 
     @Override

@@ -12,15 +12,10 @@ import org.oy.demo.nhdztemplate.R;
 import java.lang.ref.WeakReference;
 import java.util.Timer;
 
-public class WelcomeActivity extends BaseActivity {
+public class WelcomeActivity extends BaseSkinActivity {
     private Handler handler;
     private Runnable runnable;
     private boolean isCheck = false;
-
-    @Override
-    protected void beforSetContentView() {
-
-    }
 
     @Override
     protected int setContentViewId() {

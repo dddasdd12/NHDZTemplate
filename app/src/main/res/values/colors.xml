@@ -8,4 +8,9 @@
     <color name="status_bar_color">@color/primary_dark</color>
     <color name="gray">#939393</color>
     <color name="black">#000000</color>
+    <color name="skin_bg">#009999</color>
+    <color name="skin_bt_bg">#ff4000</color>
+    <color name="skin_tv_color">#ffffff</color>
+    <color name="main_bt_bg">#ff6077</color>
+    <color name="main_tv_color">#ffffff</color>
 </resources>

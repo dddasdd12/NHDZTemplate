@@ -8,8 +8,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.HorizontalScrollView;
 
-import org.oy.demo.nhdztemplate.R;
 import org.oy.chardemo.utilslibrary.indicator.IndicatorViewGroup;
+import org.oy.demo.nhdztemplate.R;
 
 /**
  * ViewPager 指示器
